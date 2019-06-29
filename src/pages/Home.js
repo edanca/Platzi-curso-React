@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles/Home.css';
-import platziconfLogoImage from '../images/platziconf-logo.svg';
 import astronautsImage from '../images/astronauts.svg';
+import platziconfLogoImage from '../images/platziconf-logo.svg';
 
-export default class Home extends Component {
+class Home extends Component {
   render() {
-    return (
-      <div className="Home">
-        <div className="container">
-          <div className="row">
+      return (
+        <div className="Home">
+          <div className="container">
+            <div className="row">
             <div className="Home__col col-12 col-md-4">
               <img
                 src={platziconfLogoImage}
@@ -31,9 +31,11 @@ export default class Home extends Component {
                 className="img-fluid p-4"
               />
             </div>
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
   }
 }
+
+export default Home;
